@@ -1,0 +1,34 @@
+name:                coinmetrics-monitor
+version:             0.1.0.0
+-- synopsis:            
+-- description:         
+license:             MIT
+author:              Alexander Bich
+maintainer:          quyse0@gmail.com
+copyright:           (c) Coin Metrics, Inc. and contributors
+category:            Cryptocurrency
+build-type:          Simple
+-- extra-source-files:  
+cabal-version:       >=1.10
+
+executable coinmetrics-monitor
+  main-is:           coinmetrics-monitor.hs
+  other-modules:
+  build-depends:
+    base
+    , coinmetrics
+    , coinmetrics-all-blockchains
+    , connection
+    , data-default
+    , http-client
+    , http-client-tls
+    , http-types
+    , optparse-applicative
+    , prometheus-client
+    , stm
+    , text
+    , time
+    , wai
+    , warp
+  ghc-options:         -threaded -Wall
+  default-language:    Haskell2010
